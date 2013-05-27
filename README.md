@@ -64,15 +64,17 @@ This means the transitions aren't as quick until the image is cached locally.
 =Known Issues
 
 * I wrote this in 6 hours.
+* Switching Array sources in the demo can cause NSRangeExceptions.  Must investigate further...
 * I cheated a bit and disallow adding subviews.  Please add subviews to a common superview.
 * Not tested with images from the Assets Library.  Borrowed old functioning code from somewhere else.
-* Retrieval of first remote image seems to have problems.  Might be a thread blocking thing.  Need to investigate.
-* Works better with local images
 * Haven't profiled yet, so don't know how efficient this all is.
+* doesn't deal with Errors yet very well.  Have to add this in the error blocks.
 
 =Installation
 
 * Clone this demo project and have a look at how it works
+* Depends on Pods listed in Podfile.
+
 
 
 

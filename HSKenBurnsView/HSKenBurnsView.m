@@ -673,7 +673,7 @@ NSInteger invdirection(CGFloat p)
     }
     
     __weak HSKenBurnsView *weakself = self;
-    [self fetchImageWithURL: _imageURLs[_nextImageIndex]
+    [self fetchImageWithURL: _imageURLs[MIN(_nextImageIndex, _imageURLs.count-1)] /* Better safe than sorry for now */
                  completion:^(UIImage *image) {
                      
                      CGRect myFrame = weakself.frame;
@@ -773,6 +773,10 @@ NSInteger invdirection(CGFloat p)
     
     // set initial state (must turn off implicit animations or else it will look weird) before animation begins
     [CATransaction begin];
+    _nextLayer = layerToAnimate;
+    _nextLayer.zPosition = 1;
+    _currentLayer.zPosition = 0;
+    
     [CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions];
     CATransform3D translateTransform = CATransform3DMakeTranslation(translationFrom.x, translationFrom.y, 1);
     CATransform3D scaleTransform = CATransform3DMakeScale(scaleFrom, scaleFrom, scaleFrom);
@@ -781,8 +785,6 @@ NSInteger invdirection(CGFloat p)
     layerToAnimate.opacity = 0.0;
     [CATransaction commit];
 
-    _nextLayer = layerToAnimate;
-    [self.layer insertSublayer: _nextLayer above: _currentLayer];
     
     // now setup the animation object with these values
     CGFloat animationDuration = _transitionTime + _waitBeforeMoveTime + _movementTime + _waitAfterMove;
@@ -861,7 +863,7 @@ NSInteger invdirection(CGFloat p)
 {
     NSNumber *tag = [theAnimation valueForKey: HSKBAnimationImageIndexKey];
     NSLog(@"Started Animating Page Index %d", tag.unsignedIntegerValue);
-
+    
 }
 
 

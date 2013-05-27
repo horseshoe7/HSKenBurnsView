@@ -17,4 +17,6 @@ Retrieval:
 BUGS:
 -----
 
+- Something's gone really wrong on the device.  I think my approach needs some tweaking.  Investigate CATransition
+
 Retrieval of first image when cycling around seems to have problems.  Might be a thread blocking thing.
