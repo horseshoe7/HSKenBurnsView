@@ -12,18 +12,6 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking 2
 #define COCOAPODS_VERSION_PATCH_AFNetworking 1
 
-// DCIntrospect
-#define COCOAPODS_POD_AVAILABLE_DCIntrospect
-#define COCOAPODS_VERSION_MAJOR_DCIntrospect 0
-#define COCOAPODS_VERSION_MINOR_DCIntrospect 0
-#define COCOAPODS_VERSION_PATCH_DCIntrospect 2
-
-// JBKenBurnsView
-#define COCOAPODS_POD_AVAILABLE_JBKenBurnsView
-#define COCOAPODS_VERSION_MAJOR_JBKenBurnsView 0
-#define COCOAPODS_VERSION_MINOR_JBKenBurnsView 1
-#define COCOAPODS_VERSION_PATCH_JBKenBurnsView 0
-
 // MGImageUtilities
 #define COCOAPODS_POD_AVAILABLE_MGImageUtilities
 #define COCOAPODS_VERSION_MAJOR_MGImageUtilities 0
