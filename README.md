@@ -41,7 +41,7 @@ The idea is the same:  You provide some imageURLs (or imageNames with file exten
 @end
 ```
 
-=Features
+Features
 
 * Simple API
 * You can provide local image names (i.e. @"myProjectImage.jpg")
@@ -52,7 +52,7 @@ The idea is the same:  You provide some imageURLs (or imageNames with file exten
 * Supports Start, Stop, Pause, Resume.
 * Provides a memory cache for images
 
-=Areas for Improvement
+Areas for Improvement
 
 * Implement image size 'clamping' in case you download really large images
 * Have disk caching for resized source images.
@@ -61,7 +61,7 @@ The idea is the same:  You provide some imageURLs (or imageNames with file exten
 * prefetch next image while current animation is playing.  Currently it will start fetching them after an animation has finished.
 This means the transitions aren't as quick until the image is cached locally.
 
-=Known Issues
+Known Issues
 
 * I wrote this in 6 hours.
 * Switching Array sources in the demo can cause NSRangeExceptions.  Must investigate further...
@@ -69,8 +69,9 @@ This means the transitions aren't as quick until the image is cached locally.
 * Not tested with images from the Assets Library.  Borrowed old functioning code from somewhere else.
 * Haven't profiled yet, so don't know how efficient this all is.
 * doesn't deal with Errors yet very well.  Have to add this in the error blocks.
+* Isn't yet a CocoaPod :-(
 
-=Installation
+Installation
 
 * Clone this demo project and have a look at how it works
 * Depends on Pods listed in Podfile.
