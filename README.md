@@ -67,6 +67,7 @@ Known Issues
 * I cheated a bit and disallow adding subviews.  Please add subviews to a common superview.
 * Not tested with images from the Assets Library.  Borrowed old functioning code from somewhere else.
 * Haven't profiled yet, so don't know how efficient this all is.
+* something weird happens with the beginning of an animation from time to time.  like it 'jumps'  have to investigate.
 * doesn't deal with Errors yet very well.  Have to add this in the error blocks.
 * Isn't yet a CocoaPod :-(
 
