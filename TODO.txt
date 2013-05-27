@@ -1,0 +1,20 @@
+TODO
+====
+
+Geometry:
+
+
+Optimizations:
+- when retrieving images, once their original size is known, you can know how to cache them for the next time you need to load it.
+    - or at least set a maximum image size
+    
+- Disk Caching.  Consider SDWebImage
+
+
+Retrieval:
+- test other types of retrieval methods
+
+BUGS:
+-----
+
+Retrieval of first image when cycling around seems to have problems.  Might be a thread blocking thing.
