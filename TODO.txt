@@ -14,9 +14,21 @@ Optimizations:
 Retrieval:
 - test other types of retrieval methods
 
+'The Algorithm' (animateLayer: ... method):
+
+- expose more parameters so people can make it a lot more customizable:
+    - max movement distance
+    - allow more variance in the movement. 
+    
+- document the algorithm so people can tweak it / improve it.
+
+- Improve API such that the calculations are more granular and not in one big method
+
+
 BUGS:
 -----
 
-- Something's gone really wrong on the device.  I think my approach needs some tweaking.  Investigate CATransition
+- got an NSRangeException when starting with puppies, then changing to Remote in the demo.  Did a hotfix but didn't track it down.  Change the hotfix to a big NSLog and a breakpoint for when it's about to fail.  (line 676)
 
-Retrieval of first image when cycling around seems to have problems.  Might be a thread blocking thing.
+
+

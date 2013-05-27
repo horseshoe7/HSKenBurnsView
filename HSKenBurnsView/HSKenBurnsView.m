@@ -249,11 +249,9 @@ NSInteger invdirection(CGFloat p)
         }
     }
     
-    [self resetRandomSelections];
-    
     _nextImageIndex = NSNotFound;
-    
     _imageURLs = newImages;
+    [self resetRandomSelections];
     
 }
 
@@ -673,6 +671,8 @@ NSInteger invdirection(CGFloat p)
     }
     
     __weak HSKenBurnsView *weakself = self;
+    
+    
     [self fetchImageWithURL: _imageURLs[MIN(_nextImageIndex, _imageURLs.count-1)] /* Better safe than sorry for now */
                  completion:^(UIImage *image) {
                      

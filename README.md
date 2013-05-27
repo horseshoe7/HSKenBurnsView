@@ -63,8 +63,7 @@ This means the transitions aren't as quick until the image is cached locally.
 
 Known Issues
 
-* I wrote this in 6 hours.
-* Switching Array sources in the demo can cause NSRangeExceptions.  Must investigate further...
+* I wrote this in 8 hours.
 * I cheated a bit and disallow adding subviews.  Please add subviews to a common superview.
 * Not tested with images from the Assets Library.  Borrowed old functioning code from somewhere else.
 * Haven't profiled yet, so don't know how efficient this all is.
