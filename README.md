@@ -73,8 +73,10 @@ Known Issues
 
 Installation
 
-* Clone this demo project and have a look at how it works
-* Depends on Pods listed in Podfile.
+* Clone this demo project
+* uses Cocoapods, so please make sure you've installed that www.cocoapods.org
+* Depends on Pods listed in Podfile, so be sure to run 'pod install' from a terminal window
+* open the project from the workspace file created by CocoaPods, not the project.
 
 
 
